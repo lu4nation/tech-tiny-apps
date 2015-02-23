@@ -1,0 +1,11 @@
+{
+  "name": "cheat-sheets",
+  "description": "Event CheatSheet Generator",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.0",
+    "express-ejs-layouts": "^1.1.0"
+  }
+}
