@@ -1,2 +1,14 @@
-<li>evento 1</li>
-<li>evento 2</li>
+<div ng-controller="EventCtrl">
+  <form ng-submit="submit()">
+    <label>Name:</label>
+    <input type="text" name="name" ng-model="event.name" required>
+    <input type="submit" value="Gravar">
+  </form>
+  <ul class="unstyled">
+    <li ng-repeat="event in events">
+      <span>{{event.name}}</span>
+    </li>
+  </ul>
+</div>
+
+<script src="/js/event.js"></script>
