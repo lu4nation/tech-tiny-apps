@@ -1,14 +1,19 @@
+
+<script src="/js/event.js"></script>
+
 <div ng-controller="EventCtrl">
   <form ng-submit="submit()">
     <label>Name:</label>
     <input type="text" name="name" ng-model="event.name" required>
+    <input type="hidden" name="id" ng-model="event.id">
     <input type="submit" value="Gravar">
   </form>
   <ul class="unstyled">
     <li ng-repeat="event in events">
       <span>{{event.name}}</span>
+      <span><a href="" ng-click="delete(event.id)">Remover</a></span>
+      <span><a href="" ng-click="edit(event)">Editar</a></span>
     </li>
   </ul>
 </div>
 
-<script src="/js/event.js"></script>
